@@ -146,7 +146,7 @@ function deleteTodo(e) {
 
 // Clear todo yang telah diselesaikan
 function clearCompletedTodo(e) {
-   e.preventDefault();
+//    e.preventDefault();
 
 //    // jika tidak ada todo, munculkan alert
 //    if (todos.length === 0) return alert('Data Kosong!!! Tidak ada data yang dihapus');
