@@ -145,36 +145,36 @@ function deleteTodo(e) {
 }
 
 // Clear todo yang telah diselesaikan
-function clearCompletedTodo(e) {
-//    e.preventDefault();
+// function clearCompletedTodo(e) {
+// //    e.preventDefault();
 
-//    // jika tidak ada todo, munculkan alert
-//    if (todos.length === 0) return alert('Data Kosong!!! Tidak ada data yang dihapus');
+// //    // jika tidak ada todo, munculkan alert
+// //    if (todos.length === 0) return alert('Data Kosong!!! Tidak ada data yang dihapus');
 
-//    // ambil semua elemen input type checkbox
-//    const checkboxes = Array.from(document.querySelectorAll('input[type="checkbox"]'));
+// //    // ambil semua elemen input type checkbox
+// //    const checkboxes = Array.from(document.querySelectorAll('input[type="checkbox"]'));
 
-//    // variabel berisi true (jika ada todo yg completed) / false (jika tidak ada todo yg completed)
-//    const hasCompletedTodo = checkboxes.some(checkbox => checkbox.checked);
+// //    // variabel berisi true (jika ada todo yg completed) / false (jika tidak ada todo yg completed)
+// //    const hasCompletedTodo = checkboxes.some(checkbox => checkbox.checked);
 
-//    // jika belum ada todo yg diselesaikan, munculkan alert
-//    if (!hasCompletedTodo) return alert('Tidak ada data, yang akan dikosongkan !');
+// //    // jika belum ada todo yg diselesaikan, munculkan alert
+// //    if (!hasCompletedTodo) return alert('Tidak ada data, yang akan dikosongkan !');
 
-//    checkboxes.forEach(checkbox => {
-//       const todoItem = checkbox.closest('li');
-//       const todoName = todoItem.querySelector('.todo-name').textContent;
+// //    checkboxes.forEach(checkbox => {
+// //       const todoItem = checkbox.closest('li');
+// //       const todoName = todoItem.querySelector('.todo-name').textContent;
 
-//       // jika todo / checkboxnya di checklist
-//       if (checkbox.checked) {
-//          // hapus todo item dari DOM
-//          todoItem.remove();
-//          // hapus todo yg di checklist dari array todos
-//          todos = todos.filter(todo => todo.name !== todoName);
-//          // simpan todolist ke locale storage
-//          saveTodosToLocaleStorage(todos);
-//       }
-//    });
-}
+// //       // jika todo / checkboxnya di checklist
+// //       if (checkbox.checked) {
+// //          // hapus todo item dari DOM
+// //          todoItem.remove();
+// //          // hapus todo yg di checklist dari array todos
+// //          todos = todos.filter(todo => todo.name !== todoName);
+// //          // simpan todolist ke locale storage
+// //          saveTodosToLocaleStorage(todos);
+// //       }
+// //    });
+// }
 
 // Filter todo berdasarkan kategori (all | active | completed)
 function filterTodo(e) {
@@ -306,5 +306,5 @@ function swapTodos(todoOne, todoTwo) {
 // Event listeners
 toggleTheme.addEventListener('click', changeTheme);
 todoForm.addEventListener('submit', addNewTodo);
-clearCompleted.addEventListener('click', clearCompletedTodo);
+// clearCompleted.addEventListener('click', clearCompletedTodo);
 todoCategories.forEach(todoCategory => todoCategory.addEventListener('click', filterTodo));
